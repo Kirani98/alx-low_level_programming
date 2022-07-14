@@ -1,33 +1,36 @@
 #include "main.h"
 
 /**
- * times_table - time table
+ * times_table - Entery point for function
+ * Desc: a function that prints the 9 times table, starting with 0
+ *
+ * Return: Void
  */
 void times_table(void)
 {
-	int x, y, k;
+	int count;
+	int multiplier;
 
-	for (x = 0; x < 10; x++)
+	for (count = 0; count < 10; count++)
 	{
-	for (y = 0; y < 10; y++)
+		_putchar('0');
+		for (multiplier = 1; multiplier < 10; multiplier++)
 	{
-		k = x * y;
-	if (y == 0)
-		_putchar(k + '0');
-	if (y != 0 && k < 10)
-	{
-		_putchar(',');
+		int res = count * multiplier;
+
+			 _putchar(',');
 		_putchar(' ');
-		_putchar(' ');
-		_putchar(k + '0');
-	} else if (k >= 10)
+		if (res < 10)
 	{
-		_putchar(',');
 		_putchar(' ');
-		_putchar((k / 10) + '0');
-		_putchar((k % 10) + '0');
 	}
+		else
+	{
+		_putchar((res / 10) + '0');
 	}
-	_putchar('\n');
+		_putchar(res % 10  + '0');
+
+	}
+		_putchar('\n');
 	}
 }
