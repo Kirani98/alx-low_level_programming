@@ -3,7 +3,7 @@
 /**
  * rev_string - function entery point
  * @s: function param
- * Desc: reverses a string 
+ * Desc: reverses a string
  * Return: void
  */
 void rev_string(char *s)
@@ -16,7 +16,7 @@ void rev_string(char *s)
 	while (s[len] != '\0')
 	{
 		len++;
-	}	
+	}
 	for (x = len - 1; x >= len / 2; x--)
 	{
 		rev = s[x];
