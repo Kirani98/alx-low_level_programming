@@ -1,5 +1,4 @@
 #include "main.h"
- 
 /**
  * _strcat - function entry point
  * @dest: function param
