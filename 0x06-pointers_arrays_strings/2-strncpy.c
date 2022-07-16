@@ -1,5 +1,4 @@
 #include "main.h"
- 
 /**
  * _strncpy - function entry piont
  * @dest: destination string
