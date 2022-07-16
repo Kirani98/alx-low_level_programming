@@ -1,6 +1,5 @@
 #include "main.h"
- 
-/**
+/*
  * _strncat - function entry point
  * @dest: destination str
  * @src: source str
