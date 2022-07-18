@@ -1,19 +1,19 @@
 #include "main.h"
+#include <unistd.h>
 
 /**
- * main - prints putchar
- * return: always 0
+ * main - Entry point
+ *
+ * Description: a program that prints _putchar, followed by a new line
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	_putchar('_');
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
+	const char str[] = "_putchar";
+
+	write(1, str, sizeof(str) - 1);
+
 	_putchar('\n');
 
 	return (0);
